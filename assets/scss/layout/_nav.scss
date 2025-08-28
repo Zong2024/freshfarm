@@ -1,0 +1,32 @@
+@mixin large{
+    @media (min-width:992px){
+        @content;
+    }
+}
+
+.nav-bottom-line{
+    border-bottom: 1px solid rgba($black, 0.2);
+        @include large{
+            border: 0px;
+        }
+}
+
+
+
+.dropdown-center .dropdown-menu {
+    background-color: rgba($white, 0.8);
+        @include large{
+            left: 50% ;
+            transform: translateX(-50%) ;
+            right: auto ;
+        }
+}
+
+
+.dropdown-top-line{
+    border-top: 1px solid rgba($black, 0.2);
+        @include large{
+            border: 0;
+        }
+
+}
