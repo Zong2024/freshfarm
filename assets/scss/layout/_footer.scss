@@ -1,0 +1,30 @@
+// footer
+.footer {
+    .logo {
+        width: 136px;
+    }
+    .small-text {
+        font-size: $font-size-base * .75;
+    }
+    @media (min-width: 768px) {
+        .small-text {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+.footer-nav {
+    .nav-link {
+        color:$white;
+        &:hover {
+            color: $primary-300;
+        }
+    }
+    @media (min-width: 768px) {
+        .nav-item:not(:last-child) {
+            .nav-link {
+                border-right: 1px solid $gray-400;
+            }
+        }
+    }
+}
