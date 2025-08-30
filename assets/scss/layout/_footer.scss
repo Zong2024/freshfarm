@@ -3,14 +3,6 @@
     .logo {
         width: 136px;
     }
-    .small-text {
-        font-size: $font-size-base * .75;
-    }
-    @media (min-width: 768px) {
-        .small-text {
-            font-size: $font-size-base;
-        }
-    }
 }
 
 .footer-nav {
