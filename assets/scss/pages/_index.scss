@@ -1,5 +1,22 @@
-// header swiper
-.swiper {
-    width: 600px;
-    height: 300px;
+// header
+.header {
+    @media (min-width: 960px) {
+        & {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+// index-navbar
+.index-navbar {
+    @media (min-width: 960px) {
+        & {
+            position: absolute;
+            z-index: 2;
+            width: 1296px;
+            top: 48px;
+            left: calc(50% - 648px);
+        }
+    }
 }
