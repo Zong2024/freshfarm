@@ -9,40 +9,57 @@
     </head>
 
     <body>
-    <header class="header d-lg-block d-flex flex-wrap">
+    <header class="header d-lg-block d-flex flex-wrap position-relative z-0">
         <!-- Slider main container -->
-        <div class="swiper order-2">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-            <picture>
-                <source srcset="/assets/images/index/index-Banner.jpg" media="(min-width: 960px)">
-                <source srcset="/assets/images/index/index-Banner.jpg" media="(min-width: 540px)">
-                <img src="/assets/images/index/index-Banner.jpg" alt="與在地同行，品嚐土地的真味" class="w-100">
-            </picture>
+        <div class="swiper header-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <!-- img -->
+                    <picture>
+                        <source srcset="/assets/images/index/index-Banner.jpg" media="(min-width: 960px)">
+                        <source srcset="/assets/images/index/index-mobile-Banner.jpg" media="(min-width: 540px)">
+                        <img src="/assets/images/index/index-mobile-Banner.jpg" alt="與在地同行，品嚐土地的真味" class="w-100">
+                    </picture>
+                    <!-- Slogan Search -->
+                    <div class="header-sloganSearch position-absolute z-1">
+                        <div class="container">
+                            <!-- Slogan -->
+                            <h2 class="fs-lg-1 h4 text-white mb-lg-4 mb-3">
+                                與在地同行，品嚐土地的真味                                    
+                            </h2>
+                            <h3 class="fs-lg-2 h5 text-white mb-lg-8 mb-6">
+                                讓每一口，都有個好故事
+                            </h3>
+                            <!-- search -->
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="header-search-sizing-lg" placeholder="請輸入商品名稱⋯">
+                                <span class="material-icons-outlined input-group-text" id="header-search-sizing-lg">search</span>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="/assets/images/index/index-Banner-1.jpg" media="(min-width: 960px)">
+                        <source srcset="/assets/images/index/index-mobile-Banner-1.jpg" media="(min-width: 540px)">
+                        <img src="/assets/images/index/index-mobile-Banner-1.jpg" alt="FreshFarm從產地到餐桌的直線距離" class="w-100">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="/assets/images/index/index-Banner-4.jpg" media="(min-width: 960px)">
+                        <source srcset="/assets/images/index/index-mobile-Banner-2.jpg" media="(min-width: 540px)">
+                        <img src="/assets/images/index/index-mobile-Banner-2.jpg" alt="今日採收，明日餐桌" class="w-100">
+                    </picture>
+                </div>
             </div>
-            <div class="swiper-slide">
-            <picture>
-                <source srcset="/assets/images/index/index-Banner-1.jpg" media="(min-width: 960px)">
-                <source srcset="/assets/images/index/index-Banner-1.jpg" media="(min-width: 540px)">
-                <img src="/assets/images/index/index-Banner-1.jpg" alt="FreshFarm從產地到餐桌的直線距離" class="w-100">
-            </picture>
-            </div>
-            <div class="swiper-slide">
-            <picture>
-                <source srcset="/assets/images/index/index-Banner-4.jpg" media="(min-width: 960px)">
-                <source srcset="/assets/images/index/index-Banner-4.jpg" media="(min-width: 540px)">
-                <img src="/assets/images/index/index-Banner-4.jpg" alt="今日採收，明日餐桌" class="w-100">
-            </picture>
-            </div>
-            ...
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-        </div>
-        <!-- nav -->
-        <div class="index-navbar order-1">
+        <!-- navbar -->
+        <div class="index-navbar position-absolute z-2">
             <nav class="navbar navbar-expand-lg py-4 px-7 py-0 rounded-4 bg-white">
                 <div class="container-fluid p-0">
                     <a class="navbar-brand " href="#">
@@ -151,7 +168,7 @@
     <script type="module">
         const swiper = new Swiper('.swiper', {
             // Optional parameters
-            loop: false,
+            loop: true,
 
             // If we need pagination
             pagination: {
