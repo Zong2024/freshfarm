@@ -8,7 +8,7 @@
     top: 0;
     right: 0;
     left: 0;
-    @media (min-width: 960px) {
+    @media (min-width: 1320px) {
         & {
             width: 1296px;
             top: 48px;
@@ -58,5 +58,39 @@
             }
         }
 
+    }
+}
+
+// decorate
+.decorate {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    background: transparent url('/assets/images/index/index-mobile-Wave-1.png') repeat-x center center / cover;
+    @media (min-width: 540px) {
+        background-image: url('/assets/images/index/index-Wave-1.png');
+        height: 60px;
+    }
+}
+
+// indexSection-title
+.indexSection-title {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        background-color: $primary-400;
+        border-radius: 100px;
+        @media (min-width: 960px) {
+            & {
+                width: 10px;
+            }
+        }
     }
 }
