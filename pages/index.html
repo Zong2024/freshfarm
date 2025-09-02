@@ -38,18 +38,54 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
+                    <!-- img -->
                     <picture>
                         <source srcset="/assets/images/index/index-Banner-1.jpg" media="(min-width: 960px)">
                         <source srcset="/assets/images/index/index-mobile-Banner-1.jpg" media="(min-width: 540px)">
                         <img src="/assets/images/index/index-mobile-Banner-1.jpg" alt="FreshFarm從產地到餐桌的直線距離" class="w-100">
                     </picture>
+                    <!-- Slogan Search -->
+                    <div class="header-sloganSearch position-absolute z-1">
+                        <div class="container">
+                            <!-- Slogan -->
+                            <h2 class="fs-lg-1 h4 text-white mb-lg-4 mb-3">
+                                今日採收，明日餐桌                                    
+                            </h2>
+                            <h3 class="fs-lg-2 h5 text-white mb-lg-8 mb-6">
+                                看得見的產地，吃得到的安心
+                            </h3>
+                            <!-- search -->
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="header-search-sizing-lg" placeholder="請輸入商品名稱⋯">
+                                <span class="material-icons-outlined input-group-text" id="header-search-sizing-lg">search</span>                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-slide">
+                    <!-- img -->
                     <picture>
                         <source srcset="/assets/images/index/index-Banner-4.jpg" media="(min-width: 960px)">
                         <source srcset="/assets/images/index/index-mobile-Banner-2.jpg" media="(min-width: 540px)">
                         <img src="/assets/images/index/index-mobile-Banner-2.jpg" alt="今日採收，明日餐桌" class="w-100">
                     </picture>
+                    <!-- Slogan Search -->
+                    <div class="header-sloganSearch position-absolute z-1">
+                        <div class="container">
+                            <!-- Slogan -->
+                            <h2 class="fs-lg-1 h4 text-white mb-lg-4 mb-3">
+                                <span class="d-block d-lg-inline me-lg-1">FreshFarm</span>從產地到餐桌的直線距離                                    
+                            </h2>
+                            <h3 class="fs-lg-2 h5 text-white mb-lg-8 mb-6">
+                                把產地的鮮活，直送你家
+                            </h3>
+                            <!-- search -->
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="header-search-sizing-lg" placeholder="請輸入商品名稱⋯">
+                                <span class="material-icons-outlined input-group-text" id="header-search-sizing-lg">search</span>                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -159,19 +195,20 @@
                 <h3 class="fs-lg-5 fs-6 text-gray-400 fw-normal">支持在地，享受最新鮮的台灣味</h3>
             </div>
             <!-- 時令直送輪播圖 -->
-            <div class="swiper2">
-                <div class="swiper-wrapper">
+            <div class="swiper2 position-relative">
+                <div class="swiper-wrapper d-flex justify-content-center align-items-center">
                     <div class="swiper-slide">
                         <div class="card" style="width: 18rem;">
                             <picture>
-                                <source srcset="image-large.jpg" media="(min-width: 800px)">
-                                <source srcset="image-medium.jpg" media="(min-width: 400px)">
-                                <img src="image-small.jpg" alt="描述圖片內容">
+                                <source srcset="/assets/images/index/index-Image.jpg" media="(min-width: 960px)">
+                                <source srcset="/assets/images/index/index-mobile-Image.jImage.jpg" media="(min-width: 540px)">
+                                <img src="/assets/images/index/index-mobile-Image.jImage.jpg" alt="描述圖片內容">
                             </picture>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h5 class="card-title fs-4">嚴選大樹老欉玉荷包</h5>
+                                <p class="card-text fs-5">玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等</p>
+                                <p class="fs-5 text-secondary-300">NT$ 588 / 1,800g</p>
+                                <a href="#" class="btn btn-primary-300 text-white">加入購物車</a>
                             </div>
                         </div>
                     </div>
@@ -221,9 +258,17 @@
 
         const swiper2 = new Swiper('.swiper2', {
             loop: true,
+            slidesPerView: 1.5,
+            spaceBetween: 24,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
             },
         });
     </script>
