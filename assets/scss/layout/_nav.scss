@@ -3,7 +3,14 @@
         @content;
     }
 }
-
+.nav-logo{
+    width: 64px;
+    height: 53px;
+    @include large{
+        width: 136px;
+        height: 80px;
+    }
+}
 .nav-bottom-line{
     border-bottom: 1px solid rgba($black, 0.2);
         @include large{
