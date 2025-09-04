@@ -60,7 +60,7 @@
     }
 }
 
-// decorate
+// 裝飾
 .decorate {
     position: absolute;
     z-index: 1;
@@ -119,6 +119,32 @@
     .swiper-button-prev {
         &::after {
             display: none;
+        }
+    }
+}
+
+// 商品分類
+.product-categories {
+    picture {
+        @media (min-width: 992px) {
+            & {
+                margin-right: 134px;
+            }
+            & img {
+                border-radius: 60px 16px 60px 16px;
+            }
+        }
+    }
+    .pc-icon {
+        width: 60px;
+        height: 60px;
+        @media (min-width: 992px) {
+            & {
+                width: 120px;
+                height: 120px;
+                right: 0;
+                top: calc(50% - 135px);
+            }
         }
     }
 }
