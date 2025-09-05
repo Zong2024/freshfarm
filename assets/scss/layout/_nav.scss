@@ -18,7 +18,9 @@
         }
 }
 
-
+.nav-shadow{
+    box-shadow: 1px 1px 50px 0px rgba($primary-300,0.12);
+}
 
 .dropdown-center .dropdown-menu {
     background-color: rgba($white, 0.8);
