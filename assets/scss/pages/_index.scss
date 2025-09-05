@@ -132,10 +132,13 @@
 
 // 商品分類
 .product-categories {
-    @media (min-width: 992px) {
-        margin-bottom: 28px;
+    & .row {
+        margin-bottom: 16px;
+        @media (min-width: 992px) {
+            margin-bottom: 28px;
+        }
     }
-    // 商品分類 icon
+    // 商品分類icon
     .pc-icon {
         width: 60px;
         height: 60px;
