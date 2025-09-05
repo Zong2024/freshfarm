@@ -132,54 +132,33 @@
 
 // 商品分類
 .product-categories {
-    li {
-        @media (min-width: 992px) {
-            margin-bottom: 28px;
-        }
-    }
-    // 商品分類圖片
-    picture {
-        @media (min-width: 992px) {
-            flex-basis: 50%;
-            &.spacing {
-                margin-right: 134px;
-            }
-            &.spacing.order-lg-2 {
-                margin-left: 134px;
-                margin-right: 0;
-            }
-        }
-        img {
-            border-radius: 16px;
-            @media (min-width: 992px) {
-                border-top-left-radius: 60px;
-                border-bottom-right-radius: 60px;
-                object-fit: cover;
-                &.mirror {
-                    border-top-left-radius: 16px;
-                    border-top-right-radius: 60px;
-                    border-bottom-right-radius: 16px;
-                    border-bottom-left-radius: 60px;
-                }
-            }
-        }
-    }
-    // 商品分類內文
-    .pc-content {
-        @media (min-width: 992px) {
-            flex-basis: calc(50% - 134px);
-        }
+    @media (min-width: 992px) {
+        margin-bottom: 28px;
     }
     // 商品分類 icon
     .pc-icon {
         width: 60px;
         height: 60px;
-        right: 0;
+        right: 16px;
         top: 0;
         @media (min-width: 992px) {
             width: 120px;
             height: 120px;
             top: calc(50% - 135px);
+        }
+    }
+    img {
+        border-radius: 16px;
+        @media (min-width: 992px) {
+            border-top-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            object-fit: cover;
+            &.mirror {
+                border-top-left-radius: 16px;
+                border-top-right-radius: 60px;
+                border-bottom-right-radius: 16px;
+                border-bottom-left-radius: 60px;
+            }
         }
     }
 }
