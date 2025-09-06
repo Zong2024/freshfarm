@@ -116,14 +116,6 @@
         overflow: hidden;
         word-break: break-all;
     }
-    .badge {
-        top: 16px;
-        left: 16px;
-    }
-    .favorite {
-        right: 16px;
-        bottom: 16px;
-    }
     .swiper-button-next,
     .swiper-button-prev {
         &::after {
@@ -157,12 +149,12 @@
 }
 
 .product-categories {
-    & .row {
-        margin-bottom: 16px;
-        @media (min-width: 992px) {
-            margin-bottom: 28px;
-        }
-    }
+    // & .row {
+    //     margin-bottom: 16px;
+    //     @media (min-width: 992px) {
+    //         margin-bottom: 28px;
+    //     }
+    // }
     // 商品分類icon
     .pc-icon {
         width: 60px;
