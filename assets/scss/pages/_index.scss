@@ -77,10 +77,12 @@
     background-image: url('/assets/images/index/index-mobile-Wave-1.png');
     background-position: center;
     background-repeat: repeat-x;
-    background-size: cover;
     @media (min-width: 996px) {
         background-image: url('/assets/images/index/index-Wave-1.png');
         height: 60px;
+    }
+    &.top {
+        transform: scaleY(-1) 
     }
 }
 
@@ -166,7 +168,23 @@
     }
 }
 
+// 小農專訪
+.interview {
+    background-image: url('/assets/images/index/index-emplate.jpg');
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
 // 品牌理念
 .brand-concept {
-    border-radius: 24px;
+    background-image: url('/assets/images/index/index-mobile-Section.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-width: 992px) {
+        background-image: url('/assets/images/index/index-Section.jpg');
+    }
+    .card {
+        border-radius: 24px;
+    }
 }
