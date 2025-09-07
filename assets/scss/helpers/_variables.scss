@@ -17,7 +17,7 @@ $light:$white;
 // $gray-300: #dee2e6 !default;
 // $gray-400: #ced4da !default;
 
-$gray-50: #F2F2F2 !default;
+$gray-50: #F1F1F1 !default;
 $gray-100: #EEEDED !default;
 $gray-200: #C6C6C6 !default;
 $gray-300: #A2A2A2 !default;
@@ -315,12 +315,14 @@ $primary-400: #646D2F;
 $primary-300: #91A469;
 $primary-200: #BEC887;
 $primary-100: #EDF5D4;
+$primary-50:  #F3F7E8;
 $primary:$primary-400;
 
 $secondary-400:#BE9D48;
 $secondary-300:#E6B12C;
 $secondary-200:#FFD850;
 $secondary-100:#FDF2D6;
+$secondary-50:#F7F1E0;
 $secondary:$secondary-300;
 
 // $primary:       $blue !default;
@@ -341,12 +343,14 @@ $theme-colors: (
 "primary-300":    $primary-300,
 "primary-200":    $primary-200,
 "primary-100":    $primary-100,
+"primary-50":    $primary-50,
 
 
 "secondary-400":    $secondary-400,
 "secondary-300":    $secondary-300,
 "secondary-200":    $secondary-200,
 "secondary-100":    $secondary-100,
+"secondary-50":    $secondary-50,
 
 "gray-400":    $gray-400,
 "gray-300":    $gray-300,
@@ -474,6 +478,7 @@ $spacers: (
     9:   60px,
     10:  80px,
     11:  120px,
+    12:  32px,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
