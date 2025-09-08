@@ -132,117 +132,63 @@
                 <div class="swiper-wrapper d-flex align-items-center">
                     <!-- 嚴選大樹老欉玉荷包 -->
                     <div class="swiper-slide overflow-hidden">
-                        <div class="card border-0">
-                            <div class="position-relative z-1">
-                                <picture>
-                                    <source srcset="/assets/images/index/index-Image.jpg" media="(min-width: 960px)">
-                                    <img src="/assets/images/index/index-mobile-Image.jImage.jpg" alt="嚴選大樹老欉玉荷包" class="card-img-top">
-                                </picture>
-                                <span class="badge top-16 start-16 rounded-pill bg-primary-100 text-primary-400 position-absolute z-2 fs-6 fw-medium">
-                                    <img src="/assets/images/index/Icons.png" alt="icons">
-                                    安心認證
-                                </span>
-                                <div class="favorite position-absolute z-2 end-16 bottom-16">
-                                    <button type="button" class="btn rounded-circle bg-white p-3">
-                                        <span class="material-icons text-gray-400 align-bottom">favorite_border</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body bg-white p-3 p-lg-4">
-                                <h5 class="card-title fs-lg-4 fs-5 mb-2">嚴選大樹老欉玉荷包</h5>
-                                <p class="card-text fs-5 text-gray-300 mb-3">玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等</p>
-                                <p class="fs-5 fw-bold text-secondary-300 mb-3">NT$ 588 / 1,800g</p>
-                                <div class="d-grid">
-                                    <a href="#" class="btn btn-primary-300 text-white fw-bold">加入購物車</a>
-                                </div>
-                            </div>
-                        </div>
+                        <%- include('./components/card',
+                        {
+                        farm:'',
+                        img: 'index/index-Image',
+                        title: '嚴選大樹老欉玉荷包',
+                        size: '5',
+                        content: '玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等' ,
+                        price: 'NT$ 588',
+                        discount:'',
+                        slash :'/',
+                        grams:'1800g',
+                        showCompareButton: false }) -%>
                     </div>
                     <!-- 有機綠竹筍(特級)4台 -->
-                    <div class="swiper-slide overflow-hidden">
-                        <div class="card border-0">
-                            <div class="position-relative z-1">
-                                <picture>
-                                    <source srcset="/assets/images/index/index-Image-1.jpg" media="(min-width: 960px)">
-                                    <img src="/assets/images/index/index-mobile-Image.jImage-1.jpg" alt="有機綠竹筍(特級)4台" class="card-img-top">
-                                </picture>
-                                <span class="badge top-16 start-16 rounded-pill bg-primary-100 text-primary-400 position-absolute z-2 fs-6 fw-medium">
-                                    <img src="/assets/images/index/Icons.png" alt="icons">
-                                    安心認證
-                                </span>
-                                <div class="favorite position-absolute z-2 end-16 bottom-16">
-                                    <button type="button" class="btn rounded-circle bg-white p-3">
-                                        <span class="material-icons text-gray-400 align-bottom">favorite_border</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body bg-white p-3 p-lg-4">
-                                <h5 class="card-title fs-lg-4 fs-5 mb-2">有機綠竹筍(特級)4台</h5>
-                                <p class="card-text fs-5 text-gray-300 mb-3">夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美</p>
-                                <p class="fs-5 fw-bold text-secondary-300 mb-3">NT$ 980 / 2,400g</p>
-                                <div class="d-grid">
-                                    <a href="#" class="btn btn-primary-300 text-white fw-bold">加入購物車</a>
-                                </div>
-                            </div>
+                        <div class="swiper-slide overflow-hidden">
+                            <%- include('./components/card',
+                            {
+                            farm:'',
+                            img: 'index/index-Image-1',
+                            title: '有機綠竹筍(特級)4台',
+                            size: '5',
+                            content: '夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美' ,
+                            price: 'NT$ 900',
+                            discount:'',
+                            slash :'/',
+                            grams:'2400g',
+                            showCompareButton: false }) -%>
                         </div>
-                    </div>
                     <!-- 拉拉山洪家水蜜桃 -->
                     <div class="swiper-slide overflow-hidden">
-                        <div class="card border-0">
-                            <div class="position-relative z-1">
-                                <picture>
-                                    <source srcset="/assets/images/index/index-Image-2.jpg" media="(min-width: 960px)">
-                                    <img src="/assets/images/index/index-mobile-Image.jImage-2.jpg" alt="拉拉山洪家水蜜桃" class="card-img-top">
-                                </picture>
-                                <span class="badge top-16 start-16 rounded-pill bg-primary-100 text-primary-400 position-absolute z-2 fs-6 fw-medium">
-                                    <img src="/assets/images/index/Icons.png" alt="icons">
-                                    安心認證
-                                </span>
-                                <div class="favorite position-absolute z-2 end-16 bottom-16">
-                                    <button type="button" class="btn rounded-circle bg-secondary-100 p-3">
-                                        <span class="material-icons text-secondary-300 align-bottom">
-                                            favorite                                            
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body bg-white p-3 p-lg-4">
-                                <h5 class="card-title fs-lg-4 fs-5 mb-2">拉拉山洪家水蜜桃</h5>
-                                <p class="card-text fs-5 text-gray-300 mb-3">主要產於高山，果肉細緻柔嫩，香氣十足，入口即化</p>
-                                <p class="fs-5 fw-bold text-secondary-300 mb-3">NT$ 1,080 / 1,500g</p>
-                                <div class="d-grid">
-                                    <a href="#" class="btn btn-primary-300 text-white fw-bold">加入購物車</a>
-                                </div>
-                            </div>
-                        </div>
+                        <%- include('./components/card',
+                        {
+                        farm:'',
+                        img: 'index/index-Image-2',
+                        title: '拉拉山洪家水蜜桃',
+                        size: '5',
+                        content: '主要產於高山，果肉細緻柔嫩，香氣十足，入口即化' ,
+                        price: 'NT$ 1,080',
+                        discount:'',
+                        slash :'/',
+                        grams:'1500g',
+                        showCompareButton: false }) -%>
                     </div>
                     <!-- 有機綠竹筍(特級)4台 -->
                     <div class="swiper-slide overflow-hidden">
-                        <div class="card border-0">
-                            <div class="position-relative z-1">
-                                <picture>
-                                    <source srcset="/assets/images/index/index-Image-1.jpg" media="(min-width: 960px)">
-                                    <img src="/assets/images/index/index-mobile-Image.jImage-1.jpg" alt="有機綠竹筍(特級)4台" class="card-img-top">
-                                </picture>
-                                <span class="badge top-16 start-16 rounded-pill bg-primary-100 text-primary-400 position-absolute z-2 fs-6 fw-medium">
-                                    <img src="/assets/images/index/Icons.png" alt="icons">
-                                    安心認證
-                                </span>
-                                <div class="favorite position-absolute z-2 end-16 bottom-16">
-                                    <button type="button" class="btn rounded-circle bg-white p-3">
-                                        <span class="material-icons text-gray-400 align-bottom">favorite_border</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body bg-white p-3 p-lg-4">
-                                <h5 class="card-title fs-lg-4 fs-5 mb-2">有機綠竹筍(特級)4台</h5>
-                                <p class="card-text fs-5 text-gray-300 mb-3">夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美</p>
-                                <p class="fs-5 fw-bold text-secondary-300 mb-3">NT$ 980 / 2,400g</p>
-                                <div class="d-grid">
-                                    <a href="#" class="btn btn-primary-300 text-white fw-bold">加入購物車</a>
-                                </div>
-                            </div>
-                        </div>
+                        <%- include('./components/card',
+                        {
+                        farm:'',
+                        img: 'index/index-Image-1',
+                        title: '有機綠竹筍(特級)4台',
+                        size: '5',
+                        content: '夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美夏季是綠竹筍的產季口感清甜、脆嫩無論涼拌、煮湯都美' ,
+                        price: 'NT$ 900',
+                        discount:'',
+                        slash :'/',
+                        grams:'2400g',
+                        showCompareButton: false }) -%>
                     </div>
                 </div>
             </div>
