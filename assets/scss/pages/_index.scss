@@ -88,6 +88,10 @@
 
 // indexSection-title
 .indexSection-title {
+    padding-left: 26px;
+    @media (min-width: 992px){
+        padding-left: 34px;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -149,13 +153,6 @@
 }
 
 .product-categories {
-    // & .row {
-    //     margin-bottom: 16px;
-    //     @media (min-width: 992px) {
-    //         margin-bottom: 28px;
-    //     }
-    // }
-    // 商品分類icon
     .pc-icon {
         width: 60px;
         height: 60px;
