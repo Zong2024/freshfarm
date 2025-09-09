@@ -1,0 +1,103 @@
+@mixin large {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+//搜尋欄
+input:focus::placeholder {
+    color: $black;
+  }
+.product-search-bar{
+    top: 16px;
+    right: 12px;
+}
+.form-control{
+    &:focus{
+        border-color: $primary;
+        color: $black;
+    }
+}
+//分類欄
+.accordion-button {
+    &::after {
+        display: none;
+    }
+    &:not(.collapsed) {  //移除accordition拉下背景色
+        background-color: transparent;
+        box-shadow: none;
+        font-size: $h6-font-size;
+        color: $black;
+        font-weight: $font-weight-bold;
+        .arrow-down {
+            transform: rotate(180deg);
+        }
+        @include large {
+            font-size: $h5-font-size;
+            color: $primary;           
+        }
+    }
+}
+.classify {
+    color: $black;
+    &:active, &:focus {
+        font-weight: $font-weight-bold;
+    }      
+    @include large {
+        color: $primary-300;
+        &:active, &:focus {
+            color: $primary;
+        }        
+    }
+}
+.classify-subitem {
+    &:active, &:focus {
+        font-weight: $font-weight-bold;
+    }     
+}
+.dropdown-toggle::after {
+  display: none;  //隱藏原本的 dropdown-toggle 樣式
+}
+//分頁
+.pagination{
+    .pagination-page {
+        width: 32px;
+    }
+    .active .page-link {
+        color: $white;
+    }
+    .page-link{
+        color: $black;
+        &:hover {
+            background-color: $primary-100;
+            color: $primary;
+        }
+        &:active, &:focus {
+            background-color: $primary-300;
+            color: $white;
+        }
+    }
+}
+
+//商品比較(電腦表格)
+.table-secondar-50 {
+    --bs-table-bg: #F7F1E0;
+}
+.table-shadow {
+    box-shadow: 0px 4px 80px 0px rgba(178, 178, 178, 0.2);
+}
+.compare-bg {
+    background-image: url(/assets/images/product/compare-bg.png);
+    background-position: bottom center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+//商品比較(手機card)
+.compare-mobile-img{
+    min-width: 80px;
+    min-height: 80px;
+}
+.card-shadow {
+    box-shadow: 0px 4px 80px 0px rgba(178, 178, 178, 0.2);    
+}
+
+
