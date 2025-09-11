@@ -130,25 +130,9 @@
 
 // 商品分類
 .product-bk {
-    &::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: rgba(239, 247, 216, 0.6);
-    }
+    background-color: rgba(239, 247, 216, 0.6);
     @media (min-width: 992px) {
-        &::before {
-            width: 1800px;
-            left: 120px;
-            border-top-left-radius: 200px;
-            border-bottom-left-radius: 200px;
-        }
+        background: transparent url('/assets/images/index/Bg.svg') no-repeat top center / contain;
     }
 }
 
