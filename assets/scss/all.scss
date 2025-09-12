@@ -8,9 +8,14 @@
 @import '../icons/icon';
 
 @import './components/card';
+@import './components/swiper';
+@import './components/decorate';
 @import './layout/header.scss';
 @import './layout/nav';
 @import './layout/footer.scss';
+@import './layout/compare';
 
 
 @import './pages/index.scss';
+@import './pages/product-list.scss';
+@import './pages/checkout.scss';
