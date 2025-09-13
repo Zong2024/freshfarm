@@ -4,17 +4,19 @@
 @import 'bootstrap/scss/bootstrap';
 
 @import './utilities/utilities';
+@import './base/base';
 
 @import '../icons/icon';
 
 @import './components/card';
 @import './components/swiper';
 @import './components/decorate';
-@import './layout/header.scss';
+@import './layout/header';
 @import './layout/nav';
-@import './layout/footer.scss';
+@import './layout/footer';
 @import './layout/compare';
 
 
-@import './pages/index.scss';
-@import './pages/product-list.scss';
+@import './pages/index';
+@import './pages/product';
+@import './pages/product-list';
