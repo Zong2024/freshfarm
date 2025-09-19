@@ -34,13 +34,12 @@
                                     把產地的鮮活，直送你家
                                 </h5>
                                 <!-- search -->
-                                <div class="input-group w-450 input-group-merge">
-                                    <input type="text" class="form-control border-end-0 py-5 px-4"
-                                        placeholder="請輸入商品名稱…" aria-label="Search">
-                                    <button type="button"
-                                        class="input-group-text material-icons bg-white   border-start-0 "
-                                        id="header-search-sizing-lg  py-5 px-4" style="font-size: 32px;">search
-                                    </button>
+                                <div class="w-450 position-relative">
+                                    <input type="text" class="form-control  py-5 px-4" placeholder="請輸入商品名稱…"
+                                        aria-label="Search">
+                                    <span class="position-absolute end-0 m-1 py-4 px-3 top-0 material-icons bg-white"
+                                        style="cursor:pointer" id="search" style="font-size: 32px;">search
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +133,8 @@
                     <div class="swiper-slide overflow-hidden">
                         <%- include('./components/card', { farm:'', img: 'index/index-Image' , title: '嚴選大樹老欉玉荷包' ,
                             size: '5' , content: '玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等玉荷包、黑葉等品種在夏季上市，果肉Q彈甜中帶酸，風玉荷包、黑葉等' ,
-                            price: 'NT$ 683' , discount:'NT$ 729', slash :'/', grams:'600g', showCompareButton: false }) -%>
+                            price: 'NT$ 683' , discount:'NT$ 729', slash :'/', grams:'600g', showCompareButton: false })
+                            -%>
                     </div>
                     <!-- 有機綠竹筍(特級)4台 -->
                     <div class="swiper-slide overflow-hidden">
@@ -146,8 +146,10 @@
                     <!-- 拉拉山洪家水蜜桃 -->
                     <div class="swiper-slide overflow-hidden">
                         <%- include('./components/card', { farm:'', img: 'index/index-Image-2' , title: '拉拉山洪家水蜜桃' ,
-                            size: '5' , content: '水蜜桃主要產於高山地區，因為氣候涼爽、日夜溫差大，使得果實能慢慢成熟，累積出豐富的甜度與香氣。其果肉細緻柔嫩，色澤粉嫩誘人，咬下一口時多汁滑順，帶有獨特的清甜芳香。' , price: 'NT$ 710' , discount:'NT$ 760', slash
-                            :'/', grams:'800g', showCompareButton: false }) -%>
+                            size: '5' ,
+                            content: '水蜜桃主要產於高山地區，因為氣候涼爽、日夜溫差大，使得果實能慢慢成熟，累積出豐富的甜度與香氣。其果肉細緻柔嫩，色澤粉嫩誘人，咬下一口時多汁滑順，帶有獨特的清甜芳香。'
+                            , price: 'NT$ 710' , discount:'NT$ 760', slash :'/', grams:'800g', showCompareButton: false
+                            }) -%>
                     </div>
                     <!-- 有機綠竹筍(特級)4台 -->
                     <div class="swiper-slide overflow-hidden">
