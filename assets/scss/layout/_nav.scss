@@ -3,6 +3,12 @@
         @content;
     }
 }
+.navbar-rounded {
+    border-radius: 0px;
+    @include large{
+        border-radius: 16px;
+    }
+}
 .nav-logo{
     width: 64px;
     height: 53px;
