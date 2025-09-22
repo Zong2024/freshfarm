@@ -1,21 +1,20 @@
 import Swiper from "swiper";
-import { Navigation, Pagination, EffectFade, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
+
 export function initSwipers() {
   const swiper = new Swiper(".swiper", {
-    modules: [Pagination, EffectFade, Autoplay],
+    modules: [Pagination, Autoplay, EffectFade],
     effect: 'fade',
     fadeEffect: {
         crossFade: true,
     },
     autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
+      delay: 4000,
     },
     loop: true,
     pagination: {
