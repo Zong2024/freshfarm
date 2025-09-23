@@ -42,3 +42,20 @@
         }
 
 }
+
+// 選單固定在上效果
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0!important;
+  border-top-left-radius: 0!important;
+  border-top-right-radius: 0!important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+  .header-nav {
+    max-width: 1224px;
+    margin: 0 auto;
+  }
+}
