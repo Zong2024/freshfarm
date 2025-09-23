@@ -88,21 +88,3 @@
         </div>
     </div>
 </div>
-
-
-<script>
-    const navBox = document.querySelector(".nav-box");
-    const nav = document.getElementById("nav");
-    const originalClasses = nav.className;
-
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 0) {
-            navBox.classList.add("shadow", "fixed-top", "bg-white");
-            nav.classList.add("rounded-0");
-            nav.classList.remove("mt-lg-8");
-        } else {
-            navBox.classList.remove("fixed-top","bg-white");
-            nav.className = originalClasses;
-        }
-    });
-</script>
