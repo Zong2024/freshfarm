@@ -3,6 +3,12 @@
         @content;
     }
 }
+.nav-box{
+    background-color: $white;
+    @include large{
+        background-color: transparent;
+    }
+}
 .navbar-rounded {
     border-radius: 0px;
     @include large{
