@@ -1,6 +1,6 @@
-
 .header-swiper {
-    .swiper-pagination {
+    > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {        
         bottom: 44px;
         @media (min-width: 992px) {
             bottom: 108px;
@@ -21,7 +21,6 @@
         }
     }
 }
-
 
 // swiper2
 .swiper2 {
