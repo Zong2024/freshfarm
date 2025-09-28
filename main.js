@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSwipers();
 
   AOS.init({
-    duration: 2000,
+    duration: 1000,
     easing: 'ease',
     once: false,
   });
